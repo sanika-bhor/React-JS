@@ -1,4 +1,4 @@
-import "./style.css";
+import "./App.css";
 import Home from "./home";
 import About from "./about";
 import Contact from "./contact";
