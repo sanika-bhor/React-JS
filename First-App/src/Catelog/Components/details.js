@@ -12,15 +12,16 @@ function Details()
        // eslint-disable-next-line no-restricted-globals
        confirm("Are you really want to ADD this TO your CART");
     }
-    return(
-        <div>
-            <h1>product details</h1>
-            <p>Title:{product.desc}</p>
-            <p>Desciption:{product.price}</p>
-            <p>Price:{product.quatity}</p>
+    return (
+      <div>
+        <h1>product details</h1>
+        <p>Title:{product.title}</p>
+        <p>Description:{product.desc}</p>
+        <p>Price:{product.price}</p>
+        <p>Quatity:{product.quatity}</p>
 
-            <button onClick={addToCart}>Add to cart</button>
-        </div>
+        <button onClick={addToCart}>Add to cart</button>
+      </div>
     );
 }
 

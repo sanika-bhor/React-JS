@@ -4,6 +4,8 @@ function Catelog() {
   return (
     <div>
       <h1>Product Catalog</h1>
+<Link to="/insert">Add new Product</Link>
+
       <ol>
         <li>
           Rose |<Link to="/details">details</Link>|

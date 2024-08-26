@@ -10,7 +10,7 @@ import Barchart from "../BI/Components/BarChart";
 import PieChart from "../BI/Components/PieChart";
 import LineChart from "../BI/Components/LineChart";
 import Details from "../Catelog/Components/details";
-
+import Insert from "../Catelog/Components/insert";
 import { Routes, Route } from "react-router-dom";
 
 var AppRoutes = () => {
@@ -25,6 +25,7 @@ var AppRoutes = () => {
 
       <Route path="/list" element={<Catelog />}/>
       <Route path="/details" element={<Details />} />
+      <Route path="/insert" element={<Insert />} />
      
 
       <Route path="/dashboard" element={<Dashboard />}>
