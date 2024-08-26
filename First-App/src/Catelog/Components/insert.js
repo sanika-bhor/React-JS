@@ -7,7 +7,7 @@ function Insert() {
             <h1>ADD NEW PRODUCT</h1>
           </u>
 
-          <form method="post" action="/register">
+          <form>
             <table>
               <tr>
                 <td>
