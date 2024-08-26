@@ -1,8 +1,16 @@
+import { useNavigate } from "react-router-dom";
 
 function Contact() {
+  const navigation = useNavigate();
+  const onHomeClick = () => {
+    navigation("/");
+  };
+
+  const onAboutClick = () => {
+    navigation("/about");
+  };
   return (
     <div className="Home">
-      
       <div class="body">
         <center>
           <u>
@@ -23,6 +31,9 @@ function Contact() {
               <b>Email: </b>bhorsanika0239@gmail.com
             </p>
           </i>
+
+          <button onClick={onHomeClick}>Home</button>
+          <button onClick={onAboutClick}>About</button>
         </center>
       </div>
     </div>

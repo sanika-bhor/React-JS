@@ -13,5 +13,4 @@ function Catelog()
         </div>
     );
 }
-
 export default Catelog;
