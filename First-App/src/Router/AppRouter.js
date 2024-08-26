@@ -12,6 +12,7 @@ import LineChart from "../BI/Components/LineChart";
 import Details from "../Catelog/Components/details";
 import Insert from "../Catelog/Components/insert";
 import Update from "../Catelog/Components/update";
+import Delete from "../Catelog/Components/delete";
 
 import { Routes, Route } from "react-router-dom";
 
@@ -29,6 +30,7 @@ var AppRoutes = () => {
       <Route path="/details" element={<Details />} />
       <Route path="/insert" element={<Insert />} />
       <Route path="/update" element={<Update />} />
+      <Route path="/delete" element={<Delete />} />
      
 
       <Route path="/dashboard" element={<Dashboard />}>

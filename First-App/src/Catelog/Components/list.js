@@ -9,8 +9,8 @@ function Catelog() {
       <ol>
         <li>
           Rose |<Link to="/details">details</Link>|
-          {/* <Link to="update">Update</Link>|
-          <Link to="delete">delete</Link>| */}
+          <Link to="/update">Update</Link>|
+          <Link to="/delete">delete</Link>|
         </li>
         <li>
           Lotus |<Link to="/details">Details</Link>|
