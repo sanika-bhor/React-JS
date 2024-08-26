@@ -9,6 +9,7 @@ import Dashboard from "../BI/Components/Dashboard";
 import Barchart from "../BI/Components/BarChart";
 import PieChart from "../BI/Components/PieChart";
 import LineChart from "../BI/Components/LineChart";
+import Details from "../Catelog/Components/details";
 
 import { Routes, Route } from "react-router-dom";
 
@@ -21,12 +22,17 @@ var AppRoutes = () => {
       <Route path="/services" element={<Services />} />
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
-      <Route path="/list" element={<Catelog />} />
+
+      <Route path="/list" element={<Catelog />}/>
+      <Route path="/details" element={<Details />} />
+     
+
       <Route path="/dashboard" element={<Dashboard />}>
         <Route path="bar" element={<Barchart />} />
         <Route path="line" element={<LineChart />} />
         <Route path="pie" element={<PieChart />} />
       </Route>
+
     </Routes>
   );
 };
