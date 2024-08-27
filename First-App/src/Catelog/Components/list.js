@@ -4,13 +4,12 @@ function Catelog() {
   return (
     <div>
       <h1>Product Catalog</h1>
-<Link to="/insert">Add new Product</Link>
+      <Link to="/insert">Add new Product</Link>
 
       <ol>
         <li>
           Rose |<Link to="/details">details</Link>|
-          <Link to="/update">Update</Link>|
-          <Link to="/delete">delete</Link>|
+          <Link to="/update">Update</Link>|<Link to="/delete">delete</Link>|
         </li>
         <li>
           Lotus |<Link to="/details">Details</Link>|
@@ -26,6 +25,11 @@ function Catelog() {
         </li>
         <li>
           Gerbera |<Link to="/details">Details</Link>|
+          <Link to="/update">Update</Link>|<Link to="/delete">delete</Link>|
+        </li>
+
+        <li>
+          Mogra |<Link to="/details">Details</Link>|
           <Link to="/update">Update</Link>|<Link to="/delete">delete</Link>|
         </li>
       </ol>
