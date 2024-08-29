@@ -1,5 +1,6 @@
+import CatelogService from "../Services/CatelogService";
 import { Link } from "react-router-dom";
-
+var product = CatelogService.getAll();
 function Catelog() {
   return (
     <div>
@@ -7,7 +8,11 @@ function Catelog() {
       <Link to="/insert">Add new Product</Link>
 
       <ol>
-        <li>
+        {product.map((products) => (
+          <li>{products.title}</li>
+        ))}
+
+        {/* <li>
           Rose |<Link to="/details">details</Link>|
           <Link to="/update">Update</Link>|<Link to="/delete">delete</Link>|
         </li>
@@ -31,7 +36,7 @@ function Catelog() {
         <li>
           Mogra |<Link to="/details">Details</Link>|
           <Link to="/update">Update</Link>|<Link to="/delete">delete</Link>|
-        </li>
+        </li> */}
       </ol>
     </div>
   );
