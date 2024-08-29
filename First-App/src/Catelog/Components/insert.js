@@ -2,7 +2,20 @@ import CatelogService from "../Services/CatelogService";
 
 function Insert() {
   var handleSubmit=()=>{
-    var product = { id: "6", title: "laptop", price: 50000, quantity: 5 };
+   // var product = { id: "6", title: "laptop", price: 50000, quantity: 5 };
+   var id=document.getElementById("id").value;
+   var title=document.getElementById("title").value;
+   var discription=document.getElementById("discription").value;
+   var price=document.getElementById("price").value;
+   var quantity=document.getElementById("quantity").value;
+
+   var product={
+    id:id,
+    title:title,
+    discription:discription,
+    price:price,
+    quantity:quantity
+   }
     CatelogService.insert(product);
   }
   return (
@@ -18,13 +31,25 @@ function Insert() {
               <tr>
                 <td>
                   <p>
+                    <b>Id:</b>
+                  </p>
+                </td>
+                <td>
+                  <input type="text" id="id" name="title" />
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <p>
                     <b>Title:</b>
                   </p>
                 </td>
                 <td>
-                  <input type="text" name="title" />
+                  <input type="text" id="title" name="title" />
                 </td>
               </tr>
+
               <tr>
                 <td>
                   <p>
@@ -32,7 +57,7 @@ function Insert() {
                   </p>
                 </td>
                 <td>
-                  <input type="text" name="Description" />
+                  <input type="text" id="Description" name="Description" />
                 </td>
               </tr>
               <tr>
@@ -42,17 +67,17 @@ function Insert() {
                   </p>
                 </td>
                 <td>
-                  <input type="text" name="location" />
+                  <input type="text" id="Price" name="location" />
                 </td>
               </tr>
               <tr>
                 <td>
                   <p>
-                    <b>Quatity:</b>
+                    <b>Quantity:</b>
                   </p>
                 </td>
                 <td>
-                  <input type="text" name="quatity" />
+                  <input type="text" id="quantity" name="Quantity" />
                 </td>
               </tr>
               <tr>
