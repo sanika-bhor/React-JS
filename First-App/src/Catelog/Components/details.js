@@ -1,7 +1,9 @@
+import { useParams } from "react-router-dom";
 import CatelogService from "../Services/CatelogService";
 
 function Details() {
-  var product = CatelogService.getById(1);
+  var {id}=useParams();
+  var product = CatelogService.getById(Number(id));
   const addToCart = () => {
     // eslint-disable-next-line no-restricted-globals
     confirm("Are you really want to ADD this TO your CART");

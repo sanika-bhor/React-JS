@@ -27,7 +27,7 @@ var AppRoutes = () => {
       <Route path="/register" element={<Register />} />
 
       <Route path="/list" element={<Catelog />}/>
-      <Route path="/details" element={<Details />} />
+      <Route path="/details/:id" element={<Details />} />
       <Route path="/insert" element={<Insert />} />
       <Route path="/update" element={<Update />} />
       <Route path="/delete" element={<Delete />} />

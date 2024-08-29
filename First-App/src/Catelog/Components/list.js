@@ -9,7 +9,7 @@ function Catelog() {
 
       <ol>
         {product.map((products) => (
-          <li>{products.title}</li>
+          <li>{products.title} | <Link to={`/details/${products.id}`}>Details</Link></li>
         ))}
 
       </ol>
