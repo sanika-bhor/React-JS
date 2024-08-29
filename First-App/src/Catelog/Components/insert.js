@@ -1,4 +1,10 @@
+import CatelogService from "../Services/CatelogService";
+
 function Insert() {
+  var handleSubmit=()=>{
+    var product = { id: "6", title: "laptop", price: 50000, quantity: 5 };
+    CatelogService.insert(product);
+  }
   return (
     <div className="Home">
       <div class="body">
@@ -7,7 +13,7 @@ function Insert() {
             <h1>ADD NEW PRODUCT</h1>
           </u>
 
-          <form>
+          <form onSubmit={handleSubmit}>
             <table>
               <tr>
                 <td>
