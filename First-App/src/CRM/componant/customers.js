@@ -1,22 +1,21 @@
+import CustomerService from "../service/customerService";
 import { Link } from "react-router-dom";
-function Customer()
-{
-    return (
-      <div>
-        <Link to="/insertcustomer">Add new Customer</Link>
-        <ol>
+function Customer() {
+  var customer = CustomerService.getAll();
+  return (
+    <div>
+      <Link to="/insertcustomer">Add new Customer</Link>
+      <ol>
+        {customer.map((customers) => (
           <li>
-            sanika |<Link to="/customerdetails">Details</Link> |
-            <Link to="/updatecustomer">update</Link> |
+            {customers.name} |{" "}
+            <Link to={`/details/${customer.id}`}>Details</Link> |
+            <Link to="/update">update</Link> |
           </li>
-          <li>sumit</li>
-          <li>disha</li>
-          <li>payal</li>
-          <li>snehal</li>
-        </ol>
-      </div>
-    );
+        ))}
+      </ol>
+    </div>
+  );
 }
 
 export default Customer;
-

@@ -43,7 +43,7 @@ var AppRoutes = () => {
       </Route>
 
       <Route path="/customers" element={<Customers />} />
-      <Route path="/customerdetails" element={<CustomerDetails />} />
+      <Route path="/customerdetails/:id" element={<CustomerDetails />} />
       <Route path="/insertcustomer" element={<InsertCustomer />} />
       <Route path="/updatecustomer" element={<UpdateCustomer />} />
     </Routes>
