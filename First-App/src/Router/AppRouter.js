@@ -14,6 +14,7 @@ import Insert from "../Catelog/Components/insert";
 import Update from "../Catelog/Components/update";
 import Delete from "../Catelog/Components/delete";
 import Customers from "../CRM/componant/customers"
+import CustomerDetails from "../CRM/componant/customerDetails";
 
 import { Routes, Route } from "react-router-dom";
 
@@ -40,6 +41,7 @@ var AppRoutes = () => {
       </Route>
 
       <Route path="/customers" element={<Customers />} />
+      <Route path="/customerdetails" element={<CustomerDetails/>}/>
     </Routes>
   );
 };
