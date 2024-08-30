@@ -5,7 +5,7 @@ function InsertCustomer() {
       <div class="body">
         <center>
           <u>
-            <h1>ADD NEW customer</h1>
+            <h1>ADD NEW CUSTOMER</h1>
           </u>
 
           <form>
