@@ -1,8 +1,8 @@
 import { useParams } from "react-router-dom";
-import CatelogService from "../../Catelog/Services/CatelogService";
+import CustomerService from "../service/customerService";
 function CustomerDetails() {
     var {id}=useParams();
-    var customer=CatelogService.getById(Number(id));
+    var customer = CustomerService.getById(Number(id));
   return (
     <div>
       <p>name:{customer.name}</p>
