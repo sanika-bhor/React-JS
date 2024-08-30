@@ -3,6 +3,7 @@ function Customer()
 {
     return (
       <div>
+        <Link to="/insertcustomer">Add new Customer</Link>
         <ol>
           <li>sanika |<Link to="/customerdetails">Details</Link> |</li>
           <li>sumit</li>
