@@ -1,4 +1,4 @@
-import CustomerDetails from "./customerDetails";
+import customerService from "./customerDetails";
 function InsertCustomer() {
      var handleSubmit = () => {
        // var product = { id: "6", title: "laptop", price: 50000, quantity: 5 };
@@ -15,7 +15,7 @@ function InsertCustomer() {
          email: email,
          quantity: password,
        };
-       CustomerDetails.insert(product);
+       customerService.insert(product);
      };
 
   return (

@@ -1,4 +1,22 @@
+import CustomerService from "../service/customerService";
 function UpdateCustomer() {
+        var handleSubmit = () => {
+          // var product = { id: "6", title: "laptop", price: 50000, quantity: 5 };
+          var id = document.getElementById("id").value;
+          var title = document.getElementById("name").value;
+          var age = document.getElementById("age").value;
+          var email = document.getElementById("email").value;
+          var password = document.getElementById("password").value;
+
+          var product = {
+            id: id,
+            name: title,
+            age: age,
+            email: email,
+            quantity: password,
+          };
+          CustomerService.insert(product);
+        };
   return (
     <div className="Home">
       <div class="body">
@@ -7,7 +25,7 @@ function UpdateCustomer() {
             <h1>UPDATE EXISTING CUSTOMER</h1>
           </u>
 
-          <form>
+          <form onSubmit={handleSubmit}>
             <table>
               <tr>
                 <td>
@@ -64,7 +82,11 @@ function UpdateCustomer() {
               <tr>
                 <td> </td>
                 <td>
-                  <input class="button" type="submit" value="update customer Data" />
+                  <input
+                    class="button"
+                    type="submit"
+                    value="update customer Data"
+                  />
                 </td>
               </tr>
             </table>
