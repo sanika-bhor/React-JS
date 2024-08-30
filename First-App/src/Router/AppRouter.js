@@ -13,6 +13,7 @@ import Details from "../Catelog/Components/details";
 import Insert from "../Catelog/Components/insert";
 import Update from "../Catelog/Components/update";
 import Delete from "../Catelog/Components/delete";
+import Customers from "../CRM/componant/customers"
 
 import { Routes, Route } from "react-router-dom";
 
@@ -26,12 +27,11 @@ var AppRoutes = () => {
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
 
-      <Route path="/list" element={<Catelog />}/>
+      <Route path="/list" element={<Catelog />} />
       <Route path="/details/:id" element={<Details />} />
       <Route path="/insert" element={<Insert />} />
       <Route path="/update" element={<Update />} />
       <Route path="/delete" element={<Delete />} />
-     
 
       <Route path="/dashboard" element={<Dashboard />}>
         <Route path="bar" element={<Barchart />} />
@@ -39,6 +39,7 @@ var AppRoutes = () => {
         <Route path="pie" element={<PieChart />} />
       </Route>
 
+      <Route path="/customers" element={<Customers />} />
     </Routes>
   );
 };

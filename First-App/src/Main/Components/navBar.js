@@ -21,6 +21,7 @@ function navBar()
         <Link to="/contact">contact</Link>|<Link to="/services">services</Link>|
         <Link to="/login">Login</Link> |<Link to="/register">Register</Link>|
         <Link to="/list">Catelog</Link>|<Link to="/dashboard">dashboard</Link>|
+        <Link to="/customers">Customers</Link>|
       </nav>
       <hr></hr>
       <hr></hr>
