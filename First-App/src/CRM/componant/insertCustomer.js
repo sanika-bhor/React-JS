@@ -1,5 +1,23 @@
-
+import CustomerDetails from "./customerDetails";
 function InsertCustomer() {
+     var handleSubmit = () => {
+       // var product = { id: "6", title: "laptop", price: 50000, quantity: 5 };
+       var id = document.getElementById("id").value;
+       var title = document.getElementById("name").value;
+       var age = document.getElementById("age").value;
+       var email = document.getElementById("email").value;
+       var password = document.getElementById("password").value;
+
+       var product = {
+         id: id,
+         name: title,
+         age: age,
+         email: email,
+         quantity: password,
+       };
+       CustomerDetails.insert(product);
+     };
+
   return (
     <div className="Home">
       <div class="body">
@@ -8,7 +26,7 @@ function InsertCustomer() {
             <h1>ADD NEW CUSTOMER</h1>
           </u>
 
-          <form>
+          <form onSubmit={handleSubmit}>
             <table>
               <tr>
                 <td>
@@ -49,7 +67,7 @@ function InsertCustomer() {
                   </p>
                 </td>
                 <td>
-                  <input type="text" id="Email" name="Email" />
+                  <input type="text" id="Email" name="eSmail" />
                 </td>
               </tr>
               <tr>
@@ -59,7 +77,7 @@ function InsertCustomer() {
                   </p>
                 </td>
                 <td>
-                  <input type="text" id="Password" name="Password" />
+                  <input type="text" id="Password" name="password" />
                 </td>
               </tr>
               <tr>
