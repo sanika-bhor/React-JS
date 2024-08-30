@@ -1,9 +1,9 @@
 var customers = [
-  { id: "1", name: "sanika", email: "sanika@gmail.com", password: "sanika" },
-  { id: "2", name: "sumit", email: "sumit@gmail.com", password: "sumit" },
-  { id: "3", name: "disha", email: "disha@gmail.com", password: "disha" },
-  { id: "4", name: "payal", email: "payal@gmail.com", password: "payal" },
-  { id: "5", name: "snehal", email: "snehal@gmail.com", password: "snehal" },
+  { id: "1", name: "sanika", age:19, email: "sanika@gmail.com", password: "sanika" },
+  { id: "2", name: "sumit", age:19, email: "sumit@gmail.com", password: "sumit" },
+  { id: "3", name: "disha", age:19, email: "disha@gmail.com", password: "disha" },
+  { id: "4", name: "payal",  age:19,email: "payal@gmail.com", password: "payal" },
+  { id: "5", name: "snehal", age:19, email: "snehal@gmail.com", password: "snehal" },
 ];
 
 const CustomerService = {
@@ -12,8 +12,8 @@ const CustomerService = {
   },
 
   getById(id) {
-    var product = customers.find((p) => p.id == id);
-    return product;
+    var customer = customers.find((p) => p.id == id);
+    return customer;
   },
 
   insert(customer) {

@@ -9,7 +9,7 @@ function Customer() {
         {customer.map((customers) => (
           <li>
             {customers.name} |{" "}
-            <Link to={`/details/${customer.id}`}>Details</Link> |
+            <Link to={`/customerdetails/${customers.id}`}>Details</Link> |
             <Link to="/update">update</Link> |
           </li>
         ))}
