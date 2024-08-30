@@ -1,7 +1,6 @@
 import customerService from "./customerDetails";
 function InsertCustomer() {
      var handleSubmit = () => {
-       // var product = { id: "6", title: "laptop", price: 50000, quantity: 5 };
        var id = document.getElementById("id").value;
        var title = document.getElementById("name").value;
        var age = document.getElementById("age").value;
