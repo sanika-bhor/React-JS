@@ -9,7 +9,7 @@ class Circle extends Shape {
 
   draw() {
     super.draw();
-    console.log("center point: " + this.center);
+    console.log("center point: " + this.center.display());
     console.log("radius: " + this.radius);
   }
 }

@@ -8,8 +8,8 @@ class Line extends Shape{
 
   draw() {
     super.draw();
-    console.log("Start point: " + this.startPoint);
-    console.log("End Point: " + this.endPoint);
+    console.log("Start point: " + this.startPoint.display());
+    console.log("End Point: " + this.endPoint.display());
   }
 }
 export default Line;
