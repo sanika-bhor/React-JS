@@ -5,9 +5,9 @@ class Point{
     this.y = y;
   }
 
-  display() {
+  static display(){
     console.log("x point: " + this.x);
-    console.log("rady point: " + this.x);
+    console.log("y point: " + this.x);
   }
 }
 export default Point;
