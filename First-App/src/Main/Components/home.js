@@ -1,4 +1,5 @@
 import OOPConcept from "../../Entity/Services/OOPConcept";
+import InventatoryManagement from "../../Entity/Services/InventatoryManagement";
 function Home() {
 
   const performOpertaion =()=>
@@ -13,6 +14,14 @@ function Home() {
     console.log("Subtraction: "+Subtraction);
     console.log("multiplication: "+Multiplication);
     console.log("division: "+Division);
+  }
+
+
+
+  const inventatoryManagement=()=>{
+    let mgr=InventatoryManagement.getManager();
+    let data=mgr.getAll();
+    console.log("Inventatary management Data: "+ JSON.stringify(data));
   }
   return (
     <div className="Home">
@@ -29,6 +38,7 @@ function Home() {
           </b>
 
           <button onClick={performOpertaion}>Invoke OOP concept</button>
+          <button onClick={inventatoryManagement}>Invoke OOP concept</button>
         </center>
       </div>
     </div>
