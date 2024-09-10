@@ -1,6 +1,7 @@
 import OOPConcept from "../../Entity/Services/OOPConcept";
 import InventatoryManagement from "../../Entity/Services/InventatoryManagement";
 import Line from "../../Entity/Services/Drawing/line";
+import Point from "../../Entity/Services/Drawing/point";
 function Home() {
 
   const performOpertaion =()=>
@@ -28,7 +29,9 @@ function Home() {
 
 
   const relationShipConcept=()=>{
-    let line=new Line(10,20,"red",20);
+    let p1=new Point(10,20);
+    let p2=new Point(30,40);
+    let line=new Line(p1,p2,"red",20);
     line.draw();
   }
   return (
