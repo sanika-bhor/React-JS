@@ -16,7 +16,7 @@ function Details({productName, discription ,price,stock}) {
     }
      return (
        <div>
-         <h1>product details</h1>
+         <h2>product details</h2>
          <p>Title:{title}</p>
          <p>Description:{desc}</p>
          <p>
