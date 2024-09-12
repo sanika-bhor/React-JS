@@ -60,7 +60,7 @@ function App() {
     },
   ];
   const title="transflower Pvt Ltd."
-  var likes=100;
+  //var likes=100;
   // var productName="rose";
   // var discription="red flower";
   // var price=50;

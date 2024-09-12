@@ -15,7 +15,7 @@ const addToCart=()=>{
       <table border="1">
         <tr>
           <td>
-            <img src={imgUrl} width="100" height="100" />
+            <img src={imgUrl} width="200" height="200" />
           </td>
         </tr>
         <tr>
