@@ -17,9 +17,10 @@ const Counter = ({ likes }) => {
 
   return (
     <div>
-      <button onClick={decrement}>-</button>
-      <label>{count}</label>
-      <button onClick={increment}>+</button>
+      <label> Likes: {count}</label>
+      <br />
+      <button onClick={increment}>👍</button>
+      <button onClick={decrement}>👎</button>
     </div>
   );
 };

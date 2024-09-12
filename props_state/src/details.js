@@ -1,36 +1,43 @@
-
+import Counter from "./counter";
 import { useState } from "react";
-function Details({productName, discription ,price,stock}) {
-    const [title, setProductName]=useState(productName);
-    const [desc,setDescription]=useState(discription)
-    const [productPrice,setPrice]=useState(price);
-    const [stockCount, setStock]=useState(stock);
-    
+function Details({ productName, discription, price, likes, image }) {
+  const [title, setProductName] = useState(productName);
+  const [desc, setDescription] = useState(discription);
+  const [productPrice, setPrice] = useState(price);
+  const [like, setLike] = useState(likes);
+  const [imgUrl, setImg] = useState(image);
 
-    const discount=()=>{
-        setPrice(productPrice * 0.8);
-    }
-
-    const getFlower=()=>{
-        setStock(stockCount-1);
-    }
-     return (
-       <div>
-         <h2>product details</h2>
-         <p>Title:{title}</p>
-         <p>Description:{desc}</p>
-         <p>
-           Price:{productPrice}
-           <button onClick={discount}>with discount</button>
-         </p>
-         <p>Quatity:{stockCount}
-             <button onClick={getFlower}>after purchase</button>
-         </p>
-
-         <button>Add to cart</button>
-       </div>
-     );
-
+const addToCart=()=>{
+  alert("items added to the cart")
+}
+  return (
+    <div>
+      <table border="1">
+        <tr>
+          <td>
+            <img src={imgUrl} width="100" height="100" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <center>
+              <p>Title:{title}</p>
+              <p>Description:{desc}</p>
+              <p>Price:{productPrice}</p>
+              <p>
+                <Counter likes={like} />
+              </p>
+            </center>
+          </td>
+        </tr>
+        <tr>
+          <center>
+            <button onClick={addToCart}>Add to cart</button>
+          </center>
+        </tr>
+      </table>
+    </div>
+  );
 }
 
 export default Details;
