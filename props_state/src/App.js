@@ -76,7 +76,7 @@ function App() {
             <td>
               <Details
                 productName={products.productName}
-                discription={product.discription}
+                discription={products.discription}
                 price={products.price}
                 likes={products.likes}
                 image={products.imageurl}
