@@ -1,14 +1,17 @@
 import { useState } from "react";
 
-const Counter =({likes})=>{
-    const [count, setCount]=useState(likes);
+
+const Counter=({likes ,onChangeLikes})=>{
+    //state
+  const [count, setCount] = useState(likes)
 
     const onHandleClick=()=>{
-        setCount(count+1);
+        // setCount((count) => count + 1);
+         onChangeLikes();
     }
     return(
         <>
-            <button onClick={onHandleClick}></button>
+            <button onClick={onHandleClick}>LIKE</button>
         </>
 
     );
