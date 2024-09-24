@@ -1,22 +1,27 @@
 import { useState } from "react";
 import Counter from "./counter";
-const Product=({id1})=> 
+const Product=({id, productName, discription,price,likes,imageUrl})=> 
 {
-    const [identity, setId] = useState(id1);
-  const [ count, setCount]=useState(500);
+    const [identity, setId] = useState(id);
+    const [title, setTittle] = useState(productName);
+    const [dis, setDiscription] = useState(discription);
+    const [prices, setPrice] = useState(price);
+    const [like, setLikes] = useState(likes);
+    const [image, setImage] = useState(imageUrl);
     const onLikes=()=>{
-        setCount(count+1);
+        setLikes(like+1);
     }
 
   return (
   <>
-  <hr/>
-    <img src="/public/flowers/gerbera.jpg" width={200} height={200}/>
-    <h3>Tittle: gerbera</h3>
-    <h3>Likes: {count}</h3>
-    <h3>ID: {identity}</h3>
+    <img src={image} width={200} height={200}/>
+    {/* <h3>ID: {identity}</h3> */}
+    <h3>Tittle: {title}</h3>
+    <h3>Discription: {dis}</h3>
+    <h3>Price: {prices}</h3>
+    <h3>Likes: {like}</h3>
 
-      <Counter  likes={count}  onChangeLikes={onLikes}/>
+      <Counter  likes={like}  onChangeLikes={onLikes}/>
   </>
   );
 }
