@@ -1,4 +1,115 @@
-.details
-{
-    font-size: 40px;
+/* ===============================
+   WRAPPER
+================================ */
+.wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+/* ===============================
+   DETAILS CARD
+================================ */
+.details {
+  width: 500px;
+  height: 300px;
+  margin-top: 50px;
+  border: 5px solid white;
+  box-shadow: 0 4px 4px #ffffff77;
+  background: transparent;
+  color: white;
+  transition: 0.4s ease;
+  border-radius: 50px;
+}
+
+.details:hover {
+  background: #fff;
+  color: black;
+}
+
+/* TEXT */
+.details h1 {
+  font-size: clamp(48px, 8vw, 100px);
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-align: center;
+  margin: 0;
+}
+
+.details p {
+  margin: 30px;
+  font-size: 18px;
+}
+
+/* ===============================
+   SVG WAVES (COMMON)
+================================ */
+.wave-svg {
+  width: 400px;
+  height: 120px;
+}
+
+/* Wave path */
+.wave-svg path {
+  stroke: #c187a2;
+  stroke-width: 5;
+  fill: none;
+  stroke-dasharray: 600;
+  filter: drop-shadow(0 0 6px #c187a2);
+}
+
+/* ===============================
+   RIGHT SIDE WAVE
+   Grows LEFT ➜ RIGHT (away from card)
+================================ */
+.wave-svg.right path {
+  stroke-dashoffset: 600;
+}
+
+.wrap:hover .wave-svg.right path {
+  animation:
+    draw-right 1.2s ease forwards,
+    wave-move 2.5s ease-in-out infinite;
+  filter: drop-shadow(0 0 14px #c187a2);
+}
+
+@keyframes draw-right {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* ===============================
+   LEFT SIDE WAVE
+   Grows RIGHT ➜ LEFT (away from card)
+================================ */
+.wave-svg.left {
+  transform: scaleX(-1); /* face outward */
+}
+
+.wave-svg.left path {
+  stroke-dashoffset: 600;
+}
+
+.wrap:hover .wave-svg.left path {
+  animation:
+    draw-left 1.2s ease forwards,
+    wave-move 2.5s ease-in-out infinite;
+  filter: drop-shadow(0 0 14px #c187a2);
+}
+
+@keyframes draw-left {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* ===============================
+   FLOATING WAVE MOTION
+================================ */
+@keyframes wave-move {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-8px); }
+  100% { transform: translateY(0); }
 }
