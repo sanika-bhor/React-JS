@@ -1,14 +1,22 @@
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-export default function Sidebar() {
-  return (
-    <div className="col-md-2 bg-dark text-white min-vh-100 p-3">
-      <h5>Transflower</h5>
-      <ul className="nav flex-column mt-4">
-        <li className="nav-item"><Link className="nav-link text-white" to="/dashboard">Dashboard</Link></li>
-        <li className="nav-item"><Link className="nav-link text-white" to="/projects">Projects</Link></li>
-        <li className="nav-item"><Link className="nav-link text-white" to="/assessments">Assessments</Link></li>
-      </ul>
-    </div>
-  );
+function Sidebar() {
+    return(
+        <div className="bg-dark p-3"  style={{width:'220px',minHeight:'100vh'}}>
+            <h5>Menu</h5>
+            <ul className='nav flex-column'>
+                <li className='nav-item'><Link className='nav-link' to='/dashboard'>Dashboard</Link></li>
+                <li className='nav-item'><Link className='nav-link' to='/projects'>My Projects</Link></li>
+                <li className='nav-item'><Link className='nav-link' to='/assessments'>Assessments</Link></li>
+                <li className='nav-item'><Link className='nav-link' to='/mentorfeedback'>Mentor Feedback</Link></li>
+                <li className='nav-item'><Link className='nav-link' to='/learningpath'>Learning Path</Link></li>
+                <li className='nav-item'><Link className='nav-link' to='/portfolio'>Portfolio</Link></li>
+                <li className='nav-item'><Link className='nav-link' to='/skill-health'>Skill Health</Link></li>
+                <li className='nav-item'><Link className='nav-link' to='/careerreadiness'>Career Readiness</Link></li>
+            </ul>
+        </div>
+    )
 }
+
+export default Sidebar;

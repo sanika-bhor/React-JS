@@ -1,16 +1,30 @@
-export default function Header() {
+import React from "react";
+
+function Header() {
+  const studentData = {
+      studentPic:"/src/assets/sanika.jpg",
+      studentName: 'Sanika',
+      targetRole: 'Full Stack Developer',
+      readiness: '68%',
+      confidence: 'Medium',
+    };
+
   return (
-    <div className="card mb-3 m-4">
-      <div className="card-body d-flex justify-content-between">
-        <div>
-          <h5>Student Name</h5>
-          <small>Target Role: Full Stack Developer</small>
-        </div>
-        <div>
-          <span className="badge bg-success me-2">Readiness: 68%</span>
-          <span className="badge bg-warning text-dark">Confidence: Medium</span>
-        </div>
+    <div className="mb-4 row d-flex">
+      <div className="col-md-1">
+        <img
+          src={studentData.studentPic}
+          alt={studentData.studentName}
+          width={70}
+          height={70}
+        />
+      </div>
+      <div className="col-md-6" >
+        <h4>Welcome,{studentData.studentName}</h4>
+        <p><strong>Readiness:</strong>{studentData.readiness}   |   <strong>Target Role: </strong>{studentData.targetRole}   |   <strong>Confidence:</strong>{studentData.confidence} </p>
       </div>
     </div>
   );
 }
+
+export default Header;

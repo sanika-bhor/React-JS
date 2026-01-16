@@ -1,20 +1,34 @@
-import Header from "../components/layout/Header";
-import ConfidenceMeter from "../components/dashboard/ConfidenceMeter";
-import NextActions from "../components/dashboard/NextActions";
+import React from 'react';
+import Header from '../Components/layout/Header';
 
 function Assessments() {
+  const assessments = [
+    {
+      title: 'Web API',
+      score: 72,
+      feedback: 'Good REST knowledge, improve error handling',
+    },
+    {
+      title: 'OOP Concepts',
+      score: 70,
+      feedback: 'Focus on inheritance and polymorphism',
+    },
+  ];
+
   return (
-    <>
-      <Header />
-      <div className="row">
-        <div className="col-md-6">
-          <ConfidenceMeter/>
+    <div>
+        <Header/>
+      <h3>Assessments</h3>
+      {assessments.map((assessment, idx) => (
+        <div key={idx} className="card mb-3">
+          <div className="card-header">{assessment.title}</div>
+          <div className="card-body">
+            <p>Score: {assessment.score}%</p>
+            <p>Feedback: {assessment.feedback}</p>
+          </div>
         </div>
-        <div className="col-md-6">
-         <NextActions/>
-        </div>
-      </div>
-    </>
+      ))}
+    </div>
   );
 }
 
