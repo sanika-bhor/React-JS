@@ -1,6 +1,6 @@
 import React from 'react';
-import Header from '../Components/layout/Header';
-import LearningPathTimeline from '../Components/dashboard/LearningPathTImeline';
+import Header from '../components/layout/Header';
+import LearningPathTimeline from '../components/dashboard/LearningPathTimeline';
 
 function LearningPath() {
   return (

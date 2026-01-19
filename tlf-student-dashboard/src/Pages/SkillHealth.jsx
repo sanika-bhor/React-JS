@@ -1,6 +1,6 @@
 import React from 'react';
-import Header from '../Components/layout/Header';
-import SkillHealthCard from '../Components/dashboard/SkillHealthCard';
+import Header from '../components/layout/Header';
+import SkillHealthCard from '../components/dashboard/SkillHealthCard';
 
 function SkillHealth() {
   return (
