@@ -1,4 +1,4 @@
-const BASEURL = "http://localhost:9191/AssessmentServlet/";
+const BASEURL = "http://localhost:9191/AssessmentServlet";
 const SubjectService = async () => {
   try {
 

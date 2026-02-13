@@ -6,19 +6,24 @@ function GetData()
      const [subjects, setSubjects] = useState([]);
 
      useEffect(()=>{
-        SubjectService().then((data)=>{
-            setSubjects(data);
-        })
+        SubjectService().then((data) => {
+          setSubjects(data);
+        });
      })
-    return(
-        
-    <>
-
-   
+    return (
+      <>
         <div>
-            <h1>{subjects}</h1>
+          {subjects.map((subject, idx) => (
+            <div key={idx} className="card mb-3">
+              <div className="card-header">Id:  {subject.id}</div>
+              <div className="card-body">
+                <p>Subject Name: {subject.title}</p>
+            
+              </div>
+            </div>
+          ))}
         </div>
-    </>
+      </>
     );
 }
 export default GetData;

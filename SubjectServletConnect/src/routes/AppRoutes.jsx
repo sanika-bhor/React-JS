@@ -5,7 +5,8 @@ function AppRoutes()
     return(
     <Router>
       <Routes>
-        <Route path="/api/subjects" element={<AllSubject/>}></Route>
+        <Route path="/api/subjects" element={<AllSubject/>}>
+        </Route>
       </Routes>
     </Router>
     );
