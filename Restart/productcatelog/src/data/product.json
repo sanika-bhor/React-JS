@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "title": "Laptop",
+    "description": "High performance laptop for work and gaming",
+    "quantity": 10,
+    "image": "./images/laptop.jpeg",
+    "unitprice": 65000
+  },
+  {
+    "id": 2,
+    "title": "Smartphone",
+    "description": "Latest smartphone with great camera and battery",
+    "quantity": 25,
+    "image": "./images/smartphone.jpeg",
+    "unitprice": 25000
+  },
+  {
+    "id": 3,
+    "title": "Headphones",
+    "description": "Noise cancelling over-ear headphones",
+    "quantity": 40,
+    "image": "./images/headphone.jpeg",
+    "unitprice": 3000
+  },
+  {
+    "id": 4,
+    "title": "Smart Watch",
+    "description": "Track your fitness and notifications",
+    "quantity": 30,
+    "image": "./images/watch.jpeg",
+    "unitprice": 5000
+  },
+  {
+    "id": 5,
+    "title": "Backpack",
+    "description": "Durable and stylish backpack for daily use",
+    "quantity": 50,
+    "image": "./images/bag.jpeg",
+    "unitprice": 1500
+  },
+  {
+    "id": 6,
+    "title": "Gaming Mouse",
+    "description": "Ergonomic mouse with RGB lighting",
+    "quantity": 35,
+    "image": "./images/mouse.jpeg",
+    "unitprice": 1200
+  },
+  {
+    "id": 7,
+    "title": "Keyboard",
+    "description": "Mechanical keyboard with backlight",
+    "quantity": 20,
+    "image": "./images/keyboard.jpeg",
+    "unitprice": 2000
+  },
+  {
+    "id": 8,
+    "title": "Shoes",
+    "description": "Comfortable running shoes",
+    "quantity": 45,
+    "image": "./images/shoe.jpeg",
+    "unitprice": 3000
+  },
+  {
+    "id": 9,
+    "title": "Water Bottle",
+    "description": "Insulated stainless steel water bottle",
+    "quantity": 60,
+    "image": "./images/watch.jpeg",
+    "unitprice": 500
+  }
+]

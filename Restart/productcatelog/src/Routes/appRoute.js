@@ -5,6 +5,7 @@ import Navbar from "../Layout/Navbar";
 import Home from "../Componets/Home";
 import AboutUs from "../Componets/About";
 import ContactUs from "../Componets/Contact";
+import ProductList from "../Page/ProductListPage";
 const AppRoute=()=>{
     return (
       <div>
@@ -17,6 +18,7 @@ const AppRoute=()=>{
             <Route path="/home" element={<Home />} />
             <Route path="/about" element={<AboutUs />} />
             <Route path="/contact" element={<ContactUs />} />
+            <Route path="/products" element={<ProductList />} />
           </Routes>
         </Router>
       </div>
