@@ -18,6 +18,7 @@ const ProductList = () => {
               image={product.image}
               quantity={product.quantity}
               price={product.unitprice}
+              like={product.likes}
             />
           </div>
         ))}

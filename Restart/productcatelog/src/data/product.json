@@ -5,7 +5,8 @@
     "description": "High performance laptop for work and gaming",
     "quantity": 10,
     "image": "./images/laptop.jpeg",
-    "unitprice": 65000
+    "unitprice": 65000,
+    "likes": 0
   },
   {
     "id": 2,
@@ -13,7 +14,8 @@
     "description": "Latest smartphone with great camera and battery",
     "quantity": 25,
     "image": "./images/smartphone.jpeg",
-    "unitprice": 25000
+    "unitprice": 25000,
+    "likes": 0
   },
   {
     "id": 3,
@@ -21,7 +23,8 @@
     "description": "Noise cancelling over-ear headphones",
     "quantity": 40,
     "image": "./images/headphone.jpeg",
-    "unitprice": 3000
+    "unitprice": 3000,
+    "likes": 0
   },
   {
     "id": 4,
@@ -29,7 +32,8 @@
     "description": "Track your fitness and notifications",
     "quantity": 30,
     "image": "./images/watch.jpeg",
-    "unitprice": 5000
+    "unitprice": 5000,
+    "likes": 0
   },
   {
     "id": 5,
@@ -37,7 +41,8 @@
     "description": "Durable and stylish backpack for daily use",
     "quantity": 50,
     "image": "./images/bag.jpeg",
-    "unitprice": 1500
+    "unitprice": 1500,
+    "likes": 0
   },
   {
     "id": 6,
@@ -45,7 +50,8 @@
     "description": "Ergonomic mouse with RGB lighting",
     "quantity": 35,
     "image": "./images/mouse.jpeg",
-    "unitprice": 1200
+    "unitprice": 1200,
+    "likes": 0
   },
   {
     "id": 7,
@@ -53,7 +59,8 @@
     "description": "Mechanical keyboard with backlight",
     "quantity": 20,
     "image": "./images/keyboard.jpeg",
-    "unitprice": 2000
+    "unitprice": 2000,
+    "likes": 0
   },
   {
     "id": 8,
@@ -61,7 +68,8 @@
     "description": "Comfortable running shoes",
     "quantity": 45,
     "image": "./images/shoe.jpeg",
-    "unitprice": 3000
+    "unitprice": 3000,
+    "likes": 0
   },
   {
     "id": 9,
@@ -69,6 +77,7 @@
     "description": "Insulated stainless steel water bottle",
     "quantity": 60,
     "image": "./images/watch.jpeg",
-    "unitprice": 500
+    "unitprice": 500,
+    "likes": 0
   }
 ]
